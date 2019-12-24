@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/img_circle"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/img_circle"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/image_userpic"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/no_image" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/location_red80"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:maxLines="2" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_req_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="iid"
+                android:textSize="10sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!--  <ImageView
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:layout_gravity="center_vertical"
+              android:src="@mipmap/next80" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f3f3f3"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/blood_group80"
+                android:layout_marginLeft="-28dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Blood group" />
+
+            <TextView
+                android:id="@+id/tv_bloodgroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" />
+
+         <!--   <TextView
+                android:id="@+id/Tv_SendReq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="right|center"
+                android:text="Send Request" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_vv"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:background="@drawable/layout_bg_colorline"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/dshbf"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:text="Send Request to this Donor"
+                android:textColor="@color/colorAccent"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <!--  <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:background="#f3f3f3"
+              android:gravity="center">
+
+              <View
+                  android:layout_width="2dp"
+                  android:layout_height="match_parent"
+                  android:layout_marginBottom="8dp"
+                  android:layout_marginTop="8dp"
+                  android:background="#d7d5d5"></View>
+
+              <TextView
+                  android:id="@+id/age_title"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:layout_marginTop="10dp"
+                  android:background="@mipmap/age80" />
+
+              <TextView
+                  android:id="@+id/age_dots"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="10dp"
+                  android:layout_marginRight="10dp"
+                  android:layout_marginTop="10dp"
+                  android:gravity="center"
+                  android:text="Age" />
+
+              <TextView
+                  android:id="@+id/tv_age"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="#333333" />
+          </LinearLayout>-->
+    </LinearLayout>
+</LinearLayout>

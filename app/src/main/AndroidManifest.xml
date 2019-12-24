@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mizpahsoft.apps.bplus">
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <!--  <permission android:name="mizpahsoft.apps.bplus.C2D_MESSAGE"
+        android:protectionLevel="signature" />-->
+    <uses-permission android:name="mizpahsoft.apps.bplus.C2D_MESSAGE" />
+
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activities.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+         Declare SMS Broadcast receiver
+         <receiver android:name="mizpahsoft.apps.bplus.Activities.SmsBroadcastReceiver" >
+             <intent-filter android:priority="999" >
+                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+             </intent-filter>
+         </receiver>
+        -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".Activities.MainActivity"
+            android:label="Home"
+            android:screenOrientation="portrait" >
+
+
+        </activity>
+        <!--
+            <activity
+            android:name=".Activities.RegistrationActivity"
+            android:label="Registration"
+            android:screenOrientation="portrait" />
+        -->
+        <!--
+            <activity
+            android:name=".Activities.LoginActivity"
+            android:label="Login"
+            android:screenOrientation="portrait" />
+        -->
+
+        <activity
+            android:name=".Activities.Settings_Activity"
+            android:label="Settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.ChangePasswordBD"
+            android:label="Change Password"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!--<activity
+            android:name=".Activities.DonorsList_Activity"
+            android:label="Donor List"
+            android:screenOrientation="portrait" />-->
+        <activity
+            android:name=".Activities.Events_Activity"
+            android:label="Events"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Tips_Activity"
+            android:label="Tips"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.RecentBloodRequest_Activity"
+            android:label="Recent Blood Requests"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.BloodBanks_Activity"
+            android:label="Blood Banks"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.ProfileActivity"
+            android:label="Profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.SuggestSaviour"
+            android:label="Spread News "
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.Forgot_Password"
+            android:label="Forgot Password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.IndividualDetails"
+            android:label="Donor Details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.Testimonials_Activity"
+            android:label="Testimonials"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.Notications_Activity"
+            android:label="Notifications"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.EventRelatedClass"
+            android:label="Events"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.DetailIndividualOne"
+            android:label="Donor Details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+            <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        -->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBDT1lPVAnvcCOtGk_jlWrMJ3tqLNkVOL4" />
+
+        <!-- Defining Services -->
+        <service android:name=".FCMService.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FCMService.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Activities.IndividualBloodRequest_Activity"
+            android:label="Blood Request"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.Individual_Myrequest_Activity"
+            android:label="My Requests"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.SearchDonaorByBloodGrp_Activity"
+            android:label="Donors by Blood Group"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.UnReadNotications_Activity"
+            android:label="Un-Read Notifications"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.AdminPage"
+            android:label="Pending Events"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Individual_PendingEvent_Activity"
+            android:label="Events"
+
+            android:screenOrientation="portrait" />
+
+        <!--
+          Optionally, register AnalyticsReceiver and AnalyticsService to support background
+          dispatching on non-Google Play devices
+        -->
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!--
+             Optionally, register CampaignTrackingReceiver and CampaignTrackingService to enable
+             installation campaign reporting
+        -->
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+
+        <activity
+            android:name=".Activities.BeforeLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.LoginAndRegistrationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".Activities.SearchDonorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+            </activity>
+        <activity
+            android:name=".Activities.AddDonor"
+            android:label="Donor Registration"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.SignInActivity"
+            android:label="SignIn"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".Activities.SaveBloodUnitActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Activities.BloodUnitStatus"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <receiver android:name=".broadcastreceivers.MySMSBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

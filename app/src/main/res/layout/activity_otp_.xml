@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thanks! Did you get a SMS pin?"
+        android:textColor="#FFFFFF"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Enter it here :"
+        android:textColor="#c9c0c0"
+        android:gravity="center"/>
+    <FrameLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="false"
+            />
+
+        <EditText
+            android:id="@+id/et_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:digits="QWERTYUIOPASDFGHJKLZXCVBNM qwertyuiopasdfghjklzxcvbnm"
+            android:gravity="center_vertical"
+            android:hint="PIN"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:maxLength="10"
+            android:minHeight="40dp"
+            android:paddingLeft="28dp"
+            android:singleLine="true"
+            android:textColor="#c6c0c0"
+            android:textSize="16sp" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt_resend"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Re-send"/>
+        <Button
+            android:id="@+id/bt_submit"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Submit"/>
+    </LinearLayout>
+</LinearLayout>

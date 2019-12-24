@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="2dp">
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/image_bg"
+        android:padding="3dip">
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="center"
+            android:src="@drawable/blooddrop" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/image_bg"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <!-- Title Of Song-->
+        <TextView
+            android:id="@+id/req_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/thumbnail"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:text="Rihanna Love the way lie"
+            android:textSize="16dip"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:gravity="center" />
+
+        <!-- Artist Name -->
+
+        <TextView
+            android:id="@+id/noti_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/req_name"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/thumbnail"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:text="TextView"
+            android:gravity="center" />
+
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/status"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="Accept &amp; Donate Blood"
+            android:textSize="12sp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#b30a0a"
+            android:textColor="#FFFFFF"
+            android:layout_height="30dp"
+            android:layout_marginBottom="3dp"
+            android:id="@+id/accept_btn" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/noti_message"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:text="Just gona stand there and ..."
+            android:textColor="#10bcc9"
+            android:textSize="10dip" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/accept_users"
+            android:textSize="8sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/req_id"
+            android:textSize="12sp"
+            android:visibility="invisible"
+            android:text="fgh" />
+    </LinearLayout>
+
+
+</LinearLayout>

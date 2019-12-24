@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Blood Request"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:background="@color/colorAccent" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/LL_Blood"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Please select required blood group"
+                android:textColor="@color/textcolor"
+                android:textSize="20sp" />
+
+            <!--  <NumberPicker
+                  android:id="@+id/np"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/tv"
+                  android:layout_marginTop="30dp" />-->
+            <com.shawnlin.numberpicker.NumberPicker
+                android:id="@+id/number_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                app:np_dividerColor="@color/colorAccent"
+                app:np_height="180dp"
+                app:np_textColor="@color/colorPrimary"
+                app:np_textSize="@dimen/text_size"
+                app:np_typeface="@string/roboto_light"
+                app:np_width="64dp" />
+
+            <Button
+                android:id="@+id/bt_reqbld"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/layout_bg_colorline"
+                android:onClick="btn_blood_Continue_Click"
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/LL_age_Gender"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Please select age "
+                android:textColor="@color/textcolor"
+                android:textSize="20sp" />
+
+            <com.shawnlin.numberpicker.NumberPicker
+                android:id="@+id/np_age"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                app:np_dividerColor="@color/colorAccent"
+                app:np_formatter="@string/number_picker_formatter"
+                app:np_height="180dp"
+                app:np_textColor="@color/colorPrimary"
+                app:np_textSize="@dimen/text_size"
+                app:np_typeface="@string/roboto_light"
+                app:np_width="64dp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="-100dp"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:text="years"
+                android:textColor="@color/textcolor"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:text="Select Gender"
+                android:textColor="@color/textcolor"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <!-- <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:layout_marginRight="5dp"
+                     android:background="@drawable/layout_bg"
+                     android:id="@+id/LL_Male">-->
+
+                <ImageView
+                    android:id="@+id/male"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_bg"
+                    android:src="@mipmap/male" />
+                <!--  </LinearLayout>-->
+
+
+                <ImageView
+                    android:id="@+id/female"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_bg"
+                    android:src="@mipmap/female" />
+
+                <ImageView
+                    android:id="@+id/other"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_bg"
+                    android:src="@mipmap/both" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_age_gender"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/layout_bg_colorline"
+                android:onClick="btn_age_gender_Continue_Click"
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LL_Location"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Please select blood required location "
+                android:textColor="@color/textcolor"
+                android:textSize="20sp" />
+
+           <!-- <AutoCompleteTextView
+                android:id="@+id/input_layout_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:digits=" 0123456789qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM!@#$%^*()-=_+,.?/{}[]|\':;"
+                android:hint="Required Location"
+                android:inputType="text"
+                android:textColor="@color/textcolor" />-->
+            <TextView
+                android:id="@+id/input_layout_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:hint="Select your Location"
+                android:padding="2dp"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/colorAccent"></View>
+
+
+            <EditText
+                android:id="@+id/tv_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Your message"
+                android:inputType="textPersonName"
+                android:layout_marginTop="25dp"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/bt_location_gender"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/layout_bg_colorline"
+                android:onClick="btn_Location_Continue_Click"
+                android:text=" Request "
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

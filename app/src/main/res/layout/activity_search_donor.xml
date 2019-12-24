@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="mizpahsoft.apps.bplus.Activities.SearchDonorActivity">
+
+        <ViewFlipper
+            android:id="@+id/viewFlipLayout"
+            android:layout_width="0dp"
+            android:layout_height="495dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include
+                layout="@layout/blood_group_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <include
+                layout="@layout/age_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <include
+                layout="@layout/gender_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <include
+                layout="@layout/blood_required_location_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </ViewFlipper>
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

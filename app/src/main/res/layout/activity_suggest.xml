@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/toolbar_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+       <!-- <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="false"
+                android:background="@drawable/user_name" />
+
+            <EditText
+                android:id="@+id/et_ss_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="QWERTYUIOPASDFGHJKLZXCVBNM qwertyuiopasdfghjklzxcvbnm"
+                android:gravity="center_vertical"
+                android:hint="Saviour's Name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:maxLength="50"
+                android:paddingLeft="22dp"
+                android:singleLine="true"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#b3afaf"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp" />
+        </FrameLayout>-->
+
+        <TextView
+            android:text="Please suggest your friends to donate blood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView13"
+            android:textColor="@color/textcolor"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <EditText
+                android:id="@+id/et_ss_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Saviour's Mobile No"
+                android:imeOptions="actionNext"
+                android:inputType="number|text"
+                android:paddingLeft="22dp"
+                android:digits="0123456789,"
+                android:textColorHint="#b3afaf"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp" />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:adjustViewBounds="false"
+                android:background="@drawable/mobile"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="false"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/email" />
+
+            <EditText
+                android:id="@+id/et_ss_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm@_.0123456789,@"
+                android:gravity="center_vertical"
+                android:hint="Saviour's Email Id"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:paddingLeft="25dp"
+                android:singleLine="true"
+                android:textColorHint="#b3afaf"
+                android:textSize="18sp" />
+        </FrameLayout>
+
+      <!--  <EditText
+            android:id="@+id/et_ss_age"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:digits="7894561230"
+            android:gravity="center_vertical"
+            android:hint="Saviour's Age"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="3"
+            android:singleLine="true"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="#b3afaf"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinner_gender"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/spinner_bloodtypes"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+        </Spinner>
+
+        <AutoCompleteTextView
+            android:id="@+id/ac_location"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="Location"
+            android:singleLine="true"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="#b3afaf"
+            android:textSize="16sp" />-->
+
+      <!--  <Button
+            android:id="@+id/bt_suggest"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/layout_bg"
+            android:onClick="invite_frnd_Button_Click"
+            android:text="Suggest"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            android:layout_width="200sp"
+            android:textSize="16sp" />-->
+
+        <Button
+            android:id="@+id/bt_suggest"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/layout_bg_colorline"
+            android:onClick="invite_frnd_Button_Click"
+            android:text="Suggest"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>

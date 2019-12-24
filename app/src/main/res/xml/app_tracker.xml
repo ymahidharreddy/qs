@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- End current session if app sleeps for a period of time -->
+    <integer name="ga_sessionTimeout">300</integer>
+
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <!--  The property id associated with this analytics tracker -->
+    <string name="ga_trackingId">UA-98213070-1</string>
+
+    <string name="ga_sampleFrequency">100.0</string>
+
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+    <screenName name="mizpahsoft.apps.bplus.Activities.AdminPage">AdminPage</screenName>
+    <screenName name="mizpahsoft.apps.bplus.Activities.DetailIndividualOne">detailsindividual</screenName>
+    <screenName name="mizpahsoft.apps.bplus.Activities.BloodBanks_Activity">BloodBanksActivity</screenName>
+    <screenName name="mizpahsoft.apps.bplus.Activities.ChangePasswordBD">ChangePassword</screenName>
+    <screenName name="mizpahsoft.apps.bplus.Activities.DonorsList_Activity">donorslistactivity</screenName>
+    <screenName name="mizpahsoft.apps.bplus.Activities.EventRelatedClass">eventrelatedclass</screenName>
+    <screenName name="mizpahsoft.apps.bplus.Activities.Events_Activity">EventsActivity</screenName>
+    <screenName name="mizpahsoft.apps.bplus.Activities.Forgot_Password">ForgotPassword</screenName>
+    <screenName name="mizpahsoft.apps.bplus.Activities.IndividualDetails">IndividualDetails</screenName>
+    <screenName name="mizpahsoft.apps.bplus.Activities.LoginActivity">LoginActivity</screenName>
+    <screenName name="mizpahsoft.apps.bplus.Activities.MainActivity">MainActivity</screenName>
+    <screenName name="mizpahsoft.apps.bplus.Activities.ReqBloodForm">ReqBloodForm</screenName>
+    <screenName name="mizpahsoft.apps.bplus.Activities.Settings_Activity">SettingsActivity</screenName>
+    <screenName name="mizpahsoft.apps.bplus.Activities.SuggestSaviour">SuggestSaviour</screenName>
+    <screenName name="mizpahsoft.apps.bplus.Activities.Tips_Activity">TipsActivity</screenName>
+    <screenName name="mizpahsoft.apps.bplus.Activities.UnReadNotications_Activity">UnreadNotificationsActivity</screenName>
+    <screenName name="mizpahsoft.apps.bplus.Activities.Testimonials_Activity">TestimonialsActivity</screenName>
+    <screenName name="mizpahsoft.apps.bplus.Activities.SearchDonaorByBloodGrp_Activity">SearchDonorByBloodGroup</screenName>
+    <screenName name="mizpahsoft.apps.bplus.Activities.RegistrationActivity">RegistrationActivity</screenName>
+    <screenName name="mizpahsoft.apps.bplus.Activities.ProfileActivity">ProfileActivity</screenName>
+    <screenName name="mizpahsoft.apps.bplus.Activities.Notications_Activity">NotificationsActivity</screenName>
+    <screenName name="mizpahsoft.apps.bplus.Activities.RecentBloodRequest_Activity">RecentBloodRequestActivity</screenName>
+    <screenName name="mizpahsoft.apps.bplus.Activities.NewRegistrationForm_Activity">NewRegistrationFormActivity</screenName>
+    <screenName name="mizpahsoft.apps.bplus.Activities.IndividualBloodRequest_Activity">IndividualBloodRequestActivity</screenName>
+    <screenName name="mizpahsoft.apps.bplus.Activities.Individual_PendingEvent_Activity">IndividualPendingEventActivity</screenName>
+    <screenName name="mizpahsoft.apps.bplus.Activities.Individual_Myrequest_Activity">IndividualMyrequestActivity</screenName>
+    <!--
+      See Project Structure -> Analytics -> Google Analytics -> Learn More
+      to learn more about configuring this file.
+    -->
+</resources>

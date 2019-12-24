@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ba0202</color>
+    <color name="colorPrimaryDark">#b30202</color>
+    <color name="colorAccent">#ba0202</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#AAA774</color>
+    <color name="textcolor">#acacac</color>
+    <color name="textcolor99999">#999999</color>
+    <color name="textcolor333">#333</color>
+    <color name="textColorGreen">#22cbac</color>
+    <color name="textColorDDD">#DDDDDD</color>
+    <color name="textColor777">#777777</color>
+    <color name="textColorResendOTP">#b30a0a</color>
+    <color name="dividerColor">#f8d2d2</color>
+    <color name="textColorBloodGroup">#b30a0a</color>
+
+
+</resources>

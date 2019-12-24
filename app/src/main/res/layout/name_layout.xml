@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/background_image"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/name_icon" />
+
+        <TextView
+            android:id="@+id/td7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:lineSpacingExtra="2dp"
+            android:text="Please enter Your Full Name"
+            android:textColor="@color/textcolor333"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:digits="qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM "
+            android:hint="Full Name"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:minHeight="50dp"
+            android:singleLine="true"
+            android:paddingLeft="5dp"
+            android:textColor="@color/textcolor333"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bt_name_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bt_yellow_bg"
+            android:text="CONTINUE"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</RelativeLayout>

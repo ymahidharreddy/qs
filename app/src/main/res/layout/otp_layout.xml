@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/background_image"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/otp_icon" />
+
+            <TextView
+                android:id="@+id/td3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:lineSpacingExtra="2dp"
+                android:text="One Time Password (OTP)"
+                android:textColor="@color/textcolor333"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/td4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:lineSpacingExtra="2dp"
+                android:text="We verifying your mobile number !"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/td5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:lineSpacingExtra="2dp"
+                android:text="(Enter the OTP below in case if we fail to detect the SMS automatically)"
+                android:textColor="@color/textcolor99999"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_number_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:lineSpacingExtra="2dp"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/et_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/edit_text_bg"
+                android:digits="0123456789"
+                android:hint="Enter OTP"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:minHeight="50dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/textcolor333"
+                android:textSize="18sp" />
+
+
+            <Button
+                android:id="@+id/bt_otp_continue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bt_yellow_bg"
+                android:text="CONTINUE"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_resend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/red_arrow_icon"
+                android:gravity="center"
+                android:text="RE-SEND (OTP)"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name">Blood Source</string>
+    <string name="no_internet">Internet not available, please try again later.</string>
+    <string name="valid_mobile">Enter valid mobile number.</string>
+    <string name="server_error">Server error occurred, please try again later.</string>
+    <string name="unknown_error">Unknown error occurred, please try again later.</string>
+    <string name="digits_password">0123456789qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM!@#$%^*()-=_+,.?/{}[]|\':;</string>
+    <string name="update_version">"Please the app to the latest version."</string>
+    <string name="sign_in">"Sign In"</string>
+    <string name="sign_out">"Sign Out"</string>
+    <string name="sign_up">"Sign Up"</string>
+
+    <string name="VUNGLE_AD_ID">ca-app-pub-7092499695797748/1808724200</string>
+    <string name="INTERSTITIAL_AD_ID">ca-app-pub-7092499695797748/1284682859</string>
+    <string name="BANNER_AD_ID">ca-app-pub-7092499695797748/3719274509</string>
+
+    <string name="username">"Your First name Last name"</string>
+    <string name="mobile">"Your mobile number"</string>
+    <string name="otp">"OTP"</string>
+    <string name="location">"Enter Location"</string>
+
+    <string name="apikey_maps">AIzaSyB6nuS1hZPmLkcUCJuiob2ITe-tMA5Br-g</string>
+    <string name="title_activity_bloodbanks_">Bloodbanks_Activity</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="reg_text">Enter below details to get \n started:</string>
+    <string name="otptext">"We sent an OTP to your given mobile number. Please enter the same."</string>
+    <string name="New_pass">"New Password"</string>
+    <string name="forgotpass">"forgot password?"</string>
+    <string name="current_pass">"Current Password"</string>
+    <string name="confirm_pass">"Confirm Password"</string>
+
+    <string name="msg_sit_back">Sit back &amp; Relax! while we verify your mobile number</string>
+    <string name="msg_manual_otp">(Enter the OTP below in case if we fail to detect the SMS automatically)</string>
+    <string name="skip_event">"<u>Skip for now and post...</u>"</string>
+
+    <string name="instructions">
+        1) Being positive for the AIDS or hepatitis viruses rules one out as a blood donor.\r\n
+        \r\n
+        2) Individuals who have had ear, tongue, or other body part piercing are allowed to donate
+        blood as long as the needle used in the piercing was sterile. If it was not or if this
+        is unknown, the potential donor must wait 12 months from the time of the piercing.\r\n
+        \r\n
+        3) Being imprisoned rules one out as a blood donor.\r\n
+        \r\n
+        4) Being in the US military and serving in Iraq or Afghanistan rules one out as a blood
+        donor for one year.\r\n
+        \r\n
+        5) A person with diabetes is allowed to donate blood. Insulin dependent diabetics are
+        allowed to donate blood as long as their insulin syringe, if reused, is used only by them.\r\n
+        \r\n
+        6) Being deferred from travel to the UK and Western Europe due to concerns about Mad Cow
+        Disease rules one out as a blood donor.\r\n
+        \r\n
+        7) Physically small people are not acceptable as blood donors as they have lower blood
+        volumes and may not be able to safely lose a full pint of blood.\r\n
+        \r\n
+        8) One may not donate blood while one has the flu. But one can donate blood after exposure
+        to someone with the flu provided the potential donor feels and has no symptoms.\r\n
+        \r\n
+        9) A minimum age limit exists as to how old a person must be in order to donate blood (usually age 17).
+        There is no maximum age limit.\r\n
+        \r\n
+        10) Pregnancy and recent childbirth rule one out as a blood donor. The safety of donating
+        blood during and shortly after pregnancy has not been fully established. There may be
+        medical risks to the mother and baby during this time.\r\n
+        \r\n
+        11) Having high or low cholesterol does not exclude a person from donating blood.\r\n
+        \r\n
+        12) Potential blood donors may be temporarily prevented from donating if they have a low
+        level of iron (hematocrit) in their blood. This requirement is for the safety of the
+        donor in order to ensure that their blood iron level remains within the normal range
+        for a healthy adult.\r\n
+        \r\n
+        13) For almost all cancers (such as breast, brain, prostate, and lung), a person may donate
+        blood five years after diagnosis or date of the last surgery, last chemotherapy or last
+        radiation treatment.\r\n
+        \r\n
+        14) For blood cancers (such as leukemia or lymphoma), a person is not allowed to donate blood.\r\n
+        \r\n
+        15) For non melanoma skin cancer or a localised cancer that has not spread elsewhere, a person
+        may give blood if the tumour has been removed and healing is complete.\r\n
+        \r\n
+        16) If a potential donor has had malaria they cannot donate blood for 12 months. This is because
+        the parasite that causes malaria can lay dormant in a person\'s system for as long as a year.\r\n
+        \r\n
+        17) A person cannot donate blood while they are on antibiotics. This is not because of the antibiotic,
+        but due to the presence of the illness or infection requiring the antibiotic,it may be transmitted
+        through the blood.\r\n
+        \r\n
+    </string>
+
+    //Number Picker
+
+    <!-- Strings related to barcode scanner -->
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+
+
+    <!-- Font -->
+    <string name="roboto_regular">sans-serif</string>
+    <string name="roboto_light">sans-serif-light</string>
+    <string name="roboto_condensed">sans-serif-condensed</string>
+    <string name="roboto_thin">sans-serif-thin</string>
+    <string name="roboto_medium">sans-serif-medium</string>
+    <string name="number_picker_formatter">%02d</string>
+
+    //add donor
+    <string name="donor_added">"Donor added successfully."</string>
+    <string name="donor_mobile">"Enter Donor mobile number"</string>
+
+    //user type
+    <string name="donor_type">"Donor"</string>
+    <string name="blood_bank_type">"Blood Bank"</string>
+
+
+    //add blood unit
+    <string name="bu_title">"Add Blood Unit"</string>
+    <string name="bu_status">"Please select the status"</string>
+    <string name="bu_mobile">"Donor mobile number"</string>
+    <string name="bu_patient">"Enter Patient Name"</string>
+
+    //blood unit status
+    <string name="bs_stock">"Blood Unit - Under Stock Process"</string>
+    <string name="bs_rejected">"Blood Unit - Rejected/Expired"</string>
+    <string name="bs_patient">"Used for a Patient"</string>
+    <string name="patient_name">"Patient Name"</string>
+    <string name="bs_title">"Update Blood Unit Status"</string>
+
+
+    <string name="before_log_in_text1">"World Blood Donor Day celebration brings a precious opportunity to all donors for celebrating it on national and global level as well as to commemorate the birthday anniversary of the Karl Landsteiner (a great scientist who won the Nobel Prize for his great discovery of the ABO blood group system)."</string>
+    <string name="before_log_in_text2">"If you’re a blood donor, you’re a hero to someone, somewhere, who received your gracious gift of life. “A Life May Depend On A Gesture From You, A Bottle Of Blood.” “The Finest Gesture One Can Make Is To Save Life By Donating Blood.” “Blood Is Meant To Circulate."</string>
+    <string name="before_log_in_text3">"To make the blood donation act a precious gift to the receivers and get new life. When we give blood, we are offering a part of our lives to save the life of someone else. which is to love others as we love ourselves."</string>
+
+    <string-array name="age_ranges">
+        <item>0 Years</item>
+        <item>1 &#8211; 2 Years</item>
+        <item>3 &#8211; 4 Years</item>
+        <item>5 &#8211; 9 Years</item>
+        <item>10 &#8211; 12 Years</item>
+        <item>13 &#8211; 19 Years</item>
+        <item>20 &#8211; 29 Years</item>
+        <item>30 &#8211; 39 Years</item>
+        <item>40 &#8211; 49 Years</item>
+        <item>50 &#8211; 59 Years</item>
+        <item>60 &#8211; 69 Years</item>
+        <item>70 &#8211; 79 Years</item>
+        <item>80 &#8211; 89 Years</item>
+        <item>90 &#8211; 99 Years</item>
+        <item>100 &#8211; 109 Years</item>
+        <item>110+ Years</item>
+    </string-array>
+
+    <string name="image">Image</string>
+
+</resources>

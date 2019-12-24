@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eae7e7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/iv_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="33.33"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_events_title"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:text=" Events "
+                android:textColor="#FFF"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@color/white"
+                android:paddingBottom="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/iv_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="33.33"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_my_events_title"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:text=" My Event "
+                android:textColor="#FFF"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@color/colorAccent"
+                android:paddingBottom="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/iv_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="33.33"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_add_events_title"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:text=" Add Event "
+                android:textColor="#FFF"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@color/colorAccent"
+                android:paddingBottom="2dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/scr_tab1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        tools:context="mizpahsoft.apps.bplus.Activities.Events_Activity">
+
+        <TextView
+            android:id="@+id/tv_no_events"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="No events yet!"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/events_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scrollbars="none"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/scr_tab2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:context="mizpahsoft.apps.bplus.Activities.Events_Activity">
+
+        <TextView
+            android:id="@+id/tv_no_myevents"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="No events yet!"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/events_list1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/scr_tab3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ScrollView
+            android:id="@+id/ll_eventadd_tab1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_event_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Event Name :"
+                    android:textColor="#acacac"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_eventadd_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:digits=" qwertyuioplkjhgfdsazxcvbnm_-1234567890QWERTYUIOPLKJHGFDSAZXCVBNM"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:maxLength="30"
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_event_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Event Date :"
+                    android:textColor="#acacac"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_eventadd_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="10"
+                    android:focusableInTouchMode="false"
+                    android:imeOptions="actionNext"
+                    android:inputType="date"
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_contact_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Contact Number(s) :"
+                    android:textColor="#acacac"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_eventadd_contactnos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:digits="0123456789,"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Location "
+                    android:textColor="#acacac"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/ac_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:id="@+id/ll_eventadd_tab1_continue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/layout_bg_colorline"
+                    android:gravity="center"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tv_eventadd_tab1_continue"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Continue"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/ll_eventadd_tab2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_conducting_by"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Conducting by :"
+                    android:textColor="#acacac"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_eventadd_condby"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:digits=" qwertyuioplkjhgfdsazxcvbnm_-1234567890QWERTYUIOPLKJHGFDSAZXCVBNM"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:maxLength="20"
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_organising"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Organization Name :"
+                    android:textColor="#acacac"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_eventadd_orgname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:digits=" qwertyuioplkjhgfdsazxcvbnm_-1234567890QWERTYUIOPLKJHGFDSAZXCVBNM"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:maxLength="30"
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Description :"
+                    android:textColor="#acacac"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_eventadd_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="10"
+                    android:gravity="left|top"
+                    android:imeOptions="actionDone"
+                    android:inputType="textMultiLine"
+                    android:maxLength="160"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:singleLine="false"
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_eventadd_tab2_continue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tv_back"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="50"
+                        android:background="@drawable/layout_bg_colorline"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Back"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_eventadd_tab2_continue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="50"
+                        android:background="@drawable/layout_bg_colorline"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Continue"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/fr_tocompress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/rl_total"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_ev_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:scaleType="center"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/profile_noimage" />
+
+                <LinearLayout
+                    android:id="@+id/ll_bt_iv_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_ev_image"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/bt_iv_back"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="30"
+                        android:background="@drawable/layout_bg_colorline"
+                        android:gravity="center"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        android:text="Back"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorAccent"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/bt_post"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="30"
+                        android:background="@drawable/layout_bg_colorline"
+                        android:gravity="center"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        android:text="Post"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorAccent"
+                        android:visibility="visible" />
+                    <!-- <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_weight="20"
+                         android:layout_height="wrap_content"
+                         android:gravity="center">
+                     <ImageView
+                         android:id="@+id/iv_after_change"
+                         android:layout_width="30dp"
+                         android:layout_height="30dp"
+                         android:layout_gravity="center"
+                         android:layout_marginRight="5dp"
+                         android:layout_marginLeft="5dp"
+                         android:background="@drawable/changeimage_bg"
+                         android:scaleType="fitXY"
+                         android:src="@mipmap/no_image"
+                         android:visibility="visible"
+                         />
+                     </LinearLayout>-->
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

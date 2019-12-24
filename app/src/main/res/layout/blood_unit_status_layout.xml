@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/background_image"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/gender_icon" />
+
+            <TextView
+                android:id="@+id/td8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:lineSpacingExtra="2dp"
+                android:text="Select the status"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/tv_stock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/edit_text_gray_bg"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:padding="4dp"
+                android:text="@string/bs_stock"
+                android:textColor="#777777"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_rejected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/edit_text_gray_bg"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:padding="4dp"
+                android:text="@string/bs_rejected"
+                android:textColor="#777777"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/tv_patient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/edit_text_gray_bg"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:padding="4dp"
+                android:text="@string/bs_patient"
+                android:textColor="#777777"
+                android:textSize="18sp" />
+            <EditText
+                android:id="@+id/et_patient_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:hint="@string/patient_name"
+                android:maxLength="30"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:background="@drawable/edit_text_bg"/>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bt_ash_bg"
+                android:text="SUBMIT"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

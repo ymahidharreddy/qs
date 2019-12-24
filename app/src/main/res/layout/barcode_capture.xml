@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+   >
+    <include
+        layout="@layout/toolbar_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_bg"
+        android:gravity="left|center"
+        android:hint="Donor Mobile Number"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:paddingLeft="5dp"
+        android:textColor="@color/textcolor333"
+        android:textColorHint="@color/textcolor333" />
+
+    <RelativeLayout
+        android:id="@+id/rl_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:visibility="visible">
+
+        <mizpahsoft.apps.bplus.camera.CameraSourcePreview
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="visible"></mizpahsoft.apps.bplus.camera.CameraSourcePreview>
+
+        <TextView
+            android:id="@+id/tv_scan1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="Point at QR Code to Scan"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_scan_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+       android:layout_margin="8dp"
+
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_blood_unit_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="18sp"
+            android:text="Blood Unit Unique Code :"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv_blood_unique_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/iv_reload"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="8dp"
+            android:src="@drawable/reload" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bt_yellow_bg"
+            android:text="SUBMIT"
+            android:textSize="20sp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="The blood unit will be saved and the status will be sent to Donor"
+            android:textColor="@color/textColor777"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

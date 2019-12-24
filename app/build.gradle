@@ -1,0 +1,166 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "mizpahsoft.apps.bplus"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 10
+        versionName "2.8"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        lintOptions {
+            checkReleaseBuilds false
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    compile('com.android.support:design:27.0.1') {
+        exclude module: "recyclerview-v7"
+        // exclude module: 'support-v4'
+    }
+
+    //compile 'com.google.android.gms:play-services:9.4.0'
+    // compile 'com.android.support:multidex:1.0.1'
+    //compile 'com.sdsmdg.tastytoast:tastytoast:0.0.1'
+    compile('com.sdsmdg.tastytoast:tastytoast:0.0.1')
+            {
+                exclude module: 'support-v4'
+                exclude module: 'appcompat-v7'
+                exclude module: 'support-annotations'
+                exclude module: 'animated-vector-drawable'
+                exclude module: 'support-vector-drawable'
+            }
+
+
+    compile('com.shawnlin:number-picker:2.2.0') {
+        exclude module: 'support-v4'
+        exclude module: 'appcompat-v7'
+        exclude module: 'support-annotations'
+        exclude module: 'animated-vector-drawable'
+        exclude module: 'support-vector-drawable'
+    }
+
+
+    compile 'com.android.support:cardview-v7:27.0.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.android.volley:volley:1.0.0'
+    compile('com.google.android.gms:play-services-maps:11.6.0') {
+        exclude module: 'support-media-compat'
+        exclude module: 'support-v4'
+        exclude module: 'support-annotations'
+        exclude module: 'support-compat'
+        exclude module: 'support-fragment'
+        exclude module: 'support-core-utils'
+        exclude module: 'support-core-ui'
+    }
+    compile('com.google.android.gms:play-services-location:11.6.0') {
+        exclude module: 'support-media-compat'
+        exclude module: 'support-v4'
+        exclude module: 'support-annotations'
+        exclude module: 'support-compat'
+        exclude module: 'support-fragment'
+        exclude module: 'support-core-utils'
+        exclude module: 'support-core-ui'
+    }
+    compile('com.google.android.gms:play-services-vision:11.6.0') {
+        exclude module: 'support-media-compat'
+        exclude module: 'support-v4'
+        exclude module: 'support-annotations'
+        exclude module: 'support-compat'
+        exclude module: 'support-fragment'
+        exclude module: 'support-core-utils'
+        exclude module: 'support-core-ui'
+    }
+    compile('com.google.firebase:firebase-messaging:11.6.0') {
+        exclude module: 'support-media-compat'
+        exclude module: 'support-v4'
+        exclude module: 'support-annotations'
+        exclude module: 'support-compat'
+        exclude module: 'support-fragment'
+        exclude module: 'support-core-utils'
+        exclude module: 'support-core-ui'
+    }
+    compile('com.google.android.gms:play-services-places:11.6.0') {
+        exclude module: 'support-media-compat'
+        exclude module: 'support-v4'
+        exclude module: 'support-annotations'
+        exclude module: 'support-compat'
+        exclude module: 'support-fragment'
+        exclude module: 'support-core-utils'
+        exclude module: 'support-core-ui'
+    }
+    compile 'org.apache.commons:commons-lang3:3.4'
+
+    compile('com.google.android.gms:play-services-analytics:11.6.0') {
+        exclude module: 'support-media-compat'
+        exclude module: 'support-v4'
+        exclude module: 'support-annotations'
+        exclude module: 'support-compat'
+        exclude module: 'support-fragment'
+        exclude module: 'support-core-utils'
+        exclude module: 'support-core-ui'
+    }
+    compile('com.google.android.gms:play-services-ads:11.6.0') {
+        exclude module: 'support-media-compat'
+        exclude module: 'support-v4'
+        exclude module: 'support-annotations'
+        exclude module: 'support-compat'
+        exclude module: 'support-fragment'
+        exclude module: 'support-core-utils'
+        exclude module: 'support-core-ui'
+    }
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile('com.google.firebase:firebase-ads:11.6.0') {
+        exclude module: 'support-media-compat'
+        exclude module: 'support-v4'
+        exclude module: 'support-annotations'
+        exclude module: 'support-compat'
+        exclude module: 'support-fragment'
+        exclude module: 'support-core-utils'
+        exclude module: 'support-core-ui'
+    }
+
+    compile("com.google.android.gms:play-services-gcm:11.6.0")
+            {
+                exclude module: 'support-media-compat'
+                exclude module: 'support-v4'
+                exclude module: 'support-annotations'
+                exclude module: 'support-compat'
+                exclude module: 'support-fragment'
+                exclude module: 'support-core-utils'
+                exclude module: 'support-core-ui'
+            }
+    compile("com.google.android.gms:play-services-auth:11.6.0")
+            {
+                exclude module: 'support-media-compat'
+                exclude module: 'support-v4'
+                exclude module: 'support-annotations'
+                exclude module: 'support-compat'
+                exclude module: 'support-fragment'
+                exclude module: 'support-core-utils'
+                exclude module: 'support-core-ui'
+            }
+}
+
+//Add this line
+apply plugin: 'com.google.gms.google-services'

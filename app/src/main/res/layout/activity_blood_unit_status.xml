@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ViewFlipper
+        android:id="@+id/viewFlipLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <RelativeLayout
+            android:id="@+id/rl_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+            <LinearLayout
+                android:id="@+id/ll_donor_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_title_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bu_mobile"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    />
+                <TextView
+                    android:id="@+id/tv_donor_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_margin="8dp"
+                    android:textSize="18sp"
+                    android:background="@drawable/edit_text_bg"
+                    android:layout_below="@id/tv_title_mobile"
+                    android:text="0000"
+                    android:textColor="@color/textColor777"
+                    />
+                <ImageView
+                    android:id="@+id/iv_reload"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="8dp"
+                    android:src="@drawable/reload" />
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bt_yellow_bg"
+                    android:text="NEXT"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+
+            <mizpahsoft.apps.bplus.camera.CameraSourcePreview
+                android:id="@+id/preview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="visible">
+
+            </mizpahsoft.apps.bplus.camera.CameraSourcePreview>
+            <ProgressBar
+                android:id="@+id/progressBarItem"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="120dp"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/tv_scan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:gravity="center"
+                android:text="Point at QR Code to Scan"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <include
+                layout="@layout/blood_unit_status_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </ViewFlipper>
+</LinearLayout>
